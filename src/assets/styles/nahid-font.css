@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Nahid;
+    src: url('../fonts/Nahid/Nahid.eot');
+    src: url('../fonts/Nahid/Nahid.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Nahid/Nahid.woff2') format('woff2'),
+        url('../fonts/Nahid/Nahid.woff') format('woff'),
+        url('../fonts/Nahid/Nahid.ttf') format('truetype');
+    font-weight: normal;
+}
