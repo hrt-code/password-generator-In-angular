@@ -1,4 +1,56 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4  offset-md-4">
 
-<h1>
-  Hi I Am Nahid Font
-</h1>
+
+      <div class="card">
+        <div class="card-header">
+          <h1 class="fs-2 text-center text-capitalize mb-0"> {{title}}</h1>
+        </div>
+        <div class="card-body">
+
+          <!-- Length -->
+          <div class="mb-3">
+            <label for="length" class="form-label">Length</label>
+            <input type="number" class="form-control" id="length"  [min]="1" [max]="20"
+              (change)="onChangeLength($event)">
+          </div>
+
+          <!-- includeLatters -->
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="includeLatters" (change)="onChangeLatter()">
+            <label class="form-check-label" for="includeLatters">include Latters</label>
+          </div>
+          <!-- includeSymbols -->
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="includeSymbols" (change)="onChangeSymbols()">
+            <label class="form-check-label" for="includeSymbols">include Symbols</label>
+          </div>
+          <!-- icludeNumbers -->
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="icludeNumbers" (change)="onChangeNumbers()">
+            <label class="form-check-label" for="icludeNumbers">include Latters</label>
+          </div>
+
+          <div class="mb-3 form-check">
+            <button class="btn btn-primary btn-block " type="submit" (click)="onButtonClick()">Generate
+              Password</button>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+      <div class="mt-5">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="text" readonly class="form-control" id="exampleInputPassword1" [value]="password">
+      </div>
+
+
+    </div>
+  </div>
+</div>
